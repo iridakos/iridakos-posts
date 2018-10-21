@@ -1,0 +1,42 @@
+{
+  "settings": {
+    "number_of_shards": 1
+  },
+  "mappings": {
+    "city_office": {
+      "properties": {
+        "city": {
+          "type": "keyword"
+        },
+        "office_type": {
+          "type": "keyword"
+        },
+        "citizens": {
+          "type": "nested",
+          "properties": {
+            "occupation": {
+              "type": "keyword"
+            },
+            "age": {
+              "type": "integer"
+            },
+            "pets": {
+              "type": "nested",
+              "properties": {
+                "kind": {
+                  "type": "keyword"
+                  },
+                "name": {
+                  "type": "keyword"
+                },
+                "age": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
