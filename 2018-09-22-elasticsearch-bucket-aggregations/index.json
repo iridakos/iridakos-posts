@@ -3,7 +3,7 @@
     "number_of_shards": 1
   },
   "mappings": {
-    "city_office": {
+    "_doc": {
       "properties": {
         "city": {
           "type": "keyword"

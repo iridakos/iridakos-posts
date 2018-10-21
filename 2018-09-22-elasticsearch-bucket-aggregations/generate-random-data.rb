@@ -23,10 +23,15 @@ cities.each do |city|
         pets: []
       }
 
+      citizen_pet_names = pet_names.dup
+
       Random.rand(1..5).times do |pet_index|
+        pet_name = citizen_pet_names.sample
+        citizen_pet_names.delete(pet_name)
+
         pet = {
           kind: pet_kinds.sample,
-          name: pet_names.sample,
+          name: pet_name,
           age: pet_ages.sample
         }
 
@@ -40,4 +45,9 @@ cities.each do |city|
   end
 end
 
-puts city_offices.to_json
+File.open("sample-data.json", 'w') do |file|
+  city_offices.each do |city_office|
+    file.puts({ "index": { "_index": "city_offices", "_type": "_doc" } }.to_json)
+    file.puts city_office.to_json
+  end
+end
