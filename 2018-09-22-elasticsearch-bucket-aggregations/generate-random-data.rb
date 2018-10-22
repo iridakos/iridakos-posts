@@ -1,6 +1,6 @@
 require 'json'
 
-cities = ['Athens', 'London', 'Berlin', 'Tokyo', 'New York', 'Amsterdam', 'Oslo', 'Paris', 'Barchelona', 'Madrid', 'Prague', 'Warsaw', 'Budapest', 'San Franscisco', 'Melbourne', 'Chicago']
+cities = ['Athens', 'London', 'Berlin', 'Tokyo', 'New York', 'Amsterdam', 'Oslo', 'Paris', 'Barcelona', 'Madrid', 'Prague', 'Warsaw', 'Budapest', 'San Francisco', 'Melbourne', 'Chicago']
 occupations = ['Hairdresser', 'Clinical Laboratory Technician', 'Fitness Trainer', 'Reporter', 'Marketing Manager', 'Microbiologist', 'Farmer', 'Librarian', 'Historian', 'Software Developer', 'Dancer', 'Statistician', 'Artist', 'Dentist', 'Photographer', 'Maintenance & Repair Worker', 'Environmental scientist', 'Editor']
 pet_kinds = ['Cat', 'Dog', 'Bird', 'Rabbit', 'Hamster']
 pet_names = ['Irida', 'Phoebe', 'Rosie', 'Morgan', 'Henry', 'Grace', 'Frankie', 'Joey', 'Monica', 'Sophia', 'Hourhouris', 'Tsirko', 'Casper', 'Nino', 'Cedar', 'Charlotte']
